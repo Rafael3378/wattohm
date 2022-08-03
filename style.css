@@ -3,9 +3,14 @@
     width: 100%;
     background-color: rgb(49, 54, 63);
     height: 70px;
-    
+    position: fixed;
+    top: 0;
+    z-index: 9999;
 }
 
+.topHeaderNav {
+
+}
 .nav {
     display: flex;
     justify-content: space-around;
@@ -18,10 +23,85 @@
 .menu {
     height: 50px;
     width: 50px;
-    
 }
 
-#logo {
+.logo {
     width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+.active {
+    background-color: bisque;
+}
+
+.intro {
+    background-image: url("images/handyman-at-construction-site-in-the-process-of-drilling-wall-with-perforator.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 50vh;
+    width: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__texte{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#watt {
+    margin-top: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+}
+
+#watt2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+.info {
+    background-color: rgb(49, 54, 63);
+
+}
+
+#info2 {
+    margin-top: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+#info3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding-bottom: 100px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
