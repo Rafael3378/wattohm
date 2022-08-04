@@ -20,24 +20,14 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="realization">
-            <div class="carousel">
-                <div class="container">
-                </div>
-                <img src="images/png-clipart-computer-icons-scalable-graphics-computer-file-carousel-angle-text.png" class="bouton" id="d">
-                <img src="images/png-clipart-computer-icons-scalable-graphics-computer-file-carousel-angle-text.png" class="bouton" id="g">
-            </div>
-            <h2>Title</h2>
-                <h3>Category</h3>
-                <h3>Date</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate temporibus fuga eius quidem, aliquam eos modi magnam ab veniam quos, optio quaerat, nisi provident dignissimos nostrum amet repellat deserunt. Aspernatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore saepe debitis aliquam ad! Amet, temporibus ipsa sed, in fugiat dolores maxime repellat quas atque nihil doloremque, suscipit voluptate? Eaque, facilis!</p>
-        </section>
+        <?php require_once $view ?>
     </main>
-    <Footer class="footer">
+    <Footer>
         <h2>Médias sociaux</h2>
-        <nav>
-            <ul class="nav_media">
+        <nav class="nav_media">
+            <ul>
                 <li><a href="#"><img class="facebook" src="images/facebook-770688_1280.webp" alt="facebook"/></a></li>
                 <li><a href="#"><img class="linkedin" src="images/unnamed.png" alt="linkedin"/></a></li>
                 <li><a href="#"><img class="instagram" src="images/téléchargement.jfif" alt="instagram"/></a></li>
@@ -45,15 +35,5 @@
         </nav>
         <p>06 06 06 06 06 <br> N° SIRET : 888 888 888 <br> Copyright Mentions legales</p>
     </Footer>
-    <script>
-        document.body.onload=function(){
-            nbr=5;
-            p=0;
-            container=document.getElementsByClassName("container");
-            g=document.getElementsByClassName("container");
-            d=document.getElementsByClassName("container");
-            container.style.width=(800*nb)+"px";
-        }
-    </script>
 </body>
 </html>
