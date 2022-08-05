@@ -182,11 +182,20 @@
     border: solid 4px rgb(49, 54, 63);
     position: relative;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .container {
     width: 40px;
     height: 20px;
+}
+
+.photo {
+    width: 40px;
+    height: 20px;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
 }
 
 .bouton {
