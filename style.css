@@ -3,7 +3,7 @@
 .topHeader{
     align-items: center;
     width: 100%;
-    background-color: rgb(49, 54, 63);
+    background-color: rgb(80, 126, 194);
     height: 70px;
     position: fixed;
     top: 0;
@@ -65,14 +65,14 @@
     top: 0;
 }
 
-.title {
+.intro__text h1 {
     margin-top: 0.5em;
     font-size: 4em;
     text-align: center;
     width: 100%;
 }
 
-.subtitle {
+.intro__text p {
     font-size: 1.8em;
     text-align: center;
     width: 100%;
@@ -80,17 +80,17 @@
 }
 
 .info {
-    background-color: rgb(49, 54, 63);
+    background-color: rgb(164, 173, 187);
 
 }
 
-.info2 {
+.info h2 {
     margin-top: 0px;
     padding-top: 50px;
     font-size: 2.5em;
 }
 
-.info3 {
+.info p {
     font-size: 1.8em;
     padding-bottom: 100px;
     text-align: justify;
@@ -106,7 +106,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 1700px;
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -114,31 +114,25 @@
     align-items: center;
 }
 
-.description_title {
+.description h2 {
     margin-top: 0.5em;
     font-size: 2.5em;
     text-align:left;
     padding-top: 50px;
 }
 
-.description_text {
+.description p {
     font-size: 1.8em;
     text-align: justify;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 0;
     margin-bottom: 0;
-}
-
-.description_title_text {
-    width: 100%;
-    height: 100%;
-    z-index: 12;
-    position: absolute;
+    padding-bottom: 100px;
 }
 
 .overlay_description {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.7);
     height: 100%;
     width: 100%;
     top: 0;
@@ -176,55 +170,88 @@
 
 /* style pour carousel */
 
-.carousel {
-    width: 100%;
-    height: 400px;
-    border: solid 4px rgb(49, 54, 63);
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
+* {box-sizing:border-box}
+
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
 }
 
-.container {
-    width: 40px;
-    height: 20px;
+/* Cacher l'image */
+.mySlides {
+display: none;
 }
 
-.photo {
-    width: 40px;
-    height: 20px;
-    margin: 0;
-    display: inline-block;
-    background-size: cover;
+/* Boutons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
 }
 
-.bouton {
-    position: absolute;
-    width: 70px;
-    curser:pointer;
-    top: 80%;
+/* bouton droite */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
 }
 
-#d{
-    right: 0;
-    opacity: 0.5;
-    transform: rotate(180deg);
-    transition: all 0.3s ease;
+/* fond noir quand la souris passe dessus */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
 }
 
-#g{
-    left: 0;
-    opacity: 0.5;
-    transform: rotate(0deg);
-    transition: all 0.3s ease;
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
 }
 
-#g:hover {
-    transform: rotate(0deg) scale(1.1);
-    opacity: 1;
+/* numero de photo */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
 }
 
-#d:hover {
-    transform: rotate(180deg) scale(1.1);
-    opacity: 1;
+/* petit point */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
 }

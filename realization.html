@@ -22,11 +22,32 @@
     </header>
     <main>
         <section class="realization">
-            <div class="carousel">
-                <div class="container">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/carousel/icons8-im1.png" style="width:100%">
+                    <div class="text">Caption Text</div>
                 </div>
-                <img src="images/png-clipart-computer-icons-scalable-graphics-computer-file-carousel-angle-text.png" class="bouton" id="d">
-                <img src="images/png-clipart-computer-icons-scalable-graphics-computer-file-carousel-angle-text.png" class="bouton" id="g">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/carousel/icons8-im2.png" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/carousel/icons8-im3.png" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+            <!-- Boutons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- point cercle -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
             <h2>Title</h2>
                 <h3>Category</h3>
@@ -45,45 +66,6 @@
         </nav>
         <p>06 06 06 06 06 <br> N° SIRET : 888 888 888 <br> Copyright Mentions legales</p>
     </Footer>
-    <script>
-        document.body.onload=function(){
-            nbr=5;
-            p=0;
-            container=document.getElementsByClassName("container");
-            g=document.getElementsByClassName("container");
-            d=document.getElementsByClassName("container");
-            container.style.width=(40*nbr)+"px";
-            for(i=1;i<=nbr;i++){
-                div=document.createElement("div");
-                div.className="photo";
-                div.style.backgroundImage="url('images/carousel/icons8-im"+i+".png')";
-                container.appendChild(div);
-            }
-        }
-        g.onclick=function(){
-            if(p>-nbr+1)
-                p--;
-            container.style.transform="translate("+p*40+"px)";
-            container.style.transition="all 0.5x ease";
-            afficherMasquer();
-        }
-        d.onclick=function(){
-            if(p<0)
-                p++;
-            container.style.transform="translate("+p*40+"px)";
-            container.style.transition="all 0.5x ease";
-            afficherMasquer();
-        }
-        function afficherMasquer(){
-            if(p==-nbr+1)
-                g.style.visibility="hidden";
-            else
-                g.style.visibility="visible";
-            if(p==0)
-                d.style.visibility="hidden";
-            else
-                d.style.visibility="visible";
-        }
-    </script>
+    <script src="carousel.js"></script>
 </body>
 </html>
