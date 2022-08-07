@@ -9,56 +9,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="topHeader">
         <nav>
-            <ul>
-                <li><a href="#"><img id="logo1" src="../wattohm/images/icons8-home-96.png" alt="logo1"/></a>Home</li>
-                <li><a href="#"><img id="logo2" src="../wattohm/images/icons8-info-64.png" alt="logo2"/></a>Info</li>
-                <li><a href="#"><img id="logo3" src="../wattohm/images/icons8-galerie-96.png" alt="logo3"/></a>Gallery</li>
-                <li><a href="#"><img id="logo4" src="../wattohm/images/icons8-mallette-128.png" alt="logo4"/></a>Recrutement</li>
-                <li><a href="#"><img id="logo5" src="../wattohm/images/icons8-stylo-à-bille-100.png" alt="logo5"/></a>Contact</li>
+            <ul class="nav">
+                <li class="menu"><a href="#"><img class="logo" src="images/icons8-home-96.png" alt="logo"/></a></li>
+                <li class="menu"><a href="#"><img class="logo" src="images/icons8-info-64.png" alt="logo"/></a></li>
+                <li class="menu"><a href="#"><img class="logo" src="images/icons8-galerie-96.png" alt="logo"/></a></li>
+                <li class="menu"><a href="#"><img class="logo" src="images/icons8-mallette-128.png" alt="logo"/></a></li>
+                <li class="menu"><a href="#"><img class="logo" src="images/icons8-stylo-à-bille-100.png" alt="logo"/></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="contact">
+        <section class="contact_title">
             <h1>Nous contacter</h1>
+            <div class="overlay_intro"></div>
         </section>
-        <section class="form">
+        <section class="formulaire_contact">
             <label for="objet">Objet:</label><br>
             <input type="text" name="objet" id="objet" placeholder="Objet">
             <br>
             <label for="numero de telephone">Numéro de téléphone:</label><br>
-            <input type="text" name="numero de telephone" id="numero de telephone" placeholder="Numéro de téléphone">
+            <input type="tel" name="numero de telephone" id="numero de telephone" placeholder="Numéro de téléphone">
             <br>
             <label for="mail">Mail:</label><br>
-            <input type="text" name="mail" id="mail" placeholder="Mail">
+            <input type="email" name="mail" id="mail" placeholder="Mail">
             <br>
             <label for="message">Message:</label><br>
-            <input type="text" name="message" id="message" placeholder="Message">
+            <textarea name="message" id="message" cols="20" rows="4" placeholder="Votre message">
+            </textarea>
             <br>
             <input type="submit" name="envoyez" id="envoyez" value="Envoyez">
         </section>
-        <section class="emploi1">
-            <h2>Title</h2>
-                <h3>Contrat</h3>
-                <h3>Localisation</h3>
-                <h3>Salaire</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  
-                    en Ile de France</p>
-        </section>
     </main>
-    <Footer>
+    <Footer class="footer">
         <h2>Médias sociaux</h2>
         <nav>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+            <ul class="nav_media">
+                <li><a href="#"><img class="facebook" src="images/facebook-770688_1280.webp" alt="facebook"/></a></li>
+                <li><a href="#"><img class="linkedin" src="images/unnamed.png" alt="linkedin"/></a></li>
+                <li><a href="#"><img class="instagram" src="images/téléchargement.jfif" alt="instagram"/></a></li>
             </ul>
         </nav>
         <p>06 06 06 06 06 <br> N° SIRET : 888 888 888 <br> Copyright Mentions legales</p>
     </Footer>
-</body>
 </html>
