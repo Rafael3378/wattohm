@@ -1,0 +1,14 @@
+{
+    "name": "rafaelmendes/wattohm",
+    "autoload": {
+        "psr-4": {
+            "Rafaelmendes\\Wattohm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rafael Mendes"
+        }
+    ],
+    "require": {}
+}
