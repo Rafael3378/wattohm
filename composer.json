@@ -2,7 +2,8 @@
     "name": "rafaelmendes/wattohm",
     "autoload": {
         "psr-4": {
-            "Rafaelmendes\\Wattohm\\": "src/"
+            "Router\\": "Router/",
+            "Exceptions\\": "Exceptions/"
         }
     },
     "authors": [
