@@ -1,0 +1,17 @@
+{
+    "name": "utilisateur/wattohm",
+    "autoload": {
+        "psr-4": {
+            "Utilisateur\\Wattohm\\": "src/",
+            "Router\\": "Routes/",
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rafael Mendes",
+            "email": "mendes.rafael78@gmail.com"
+        }
+    ],
+    "require": {}
+}
