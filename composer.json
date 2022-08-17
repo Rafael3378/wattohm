@@ -4,7 +4,8 @@
         "psr-4": {
             "Utilisateur\\Wattohm\\": "src/",
             "Router\\": "Routes/",
-            "App\\": "app/"
+            "App\\": "app/",
+            "Database\\": "database/"
         }
     },
     "authors": [

@@ -1,7 +1,7 @@
 <?php
 
 namespace Router;
-
+// la classe Router permet de selectionner la bonne route en fonction de la route voulu
 class Router {
 
     public $url;
@@ -21,7 +21,7 @@ class Router {
     {
         foreach ($this->routes[$_SERVER['REQUEST_METHOD']] as $route) {
             if ($route->matches($this->url)) {
-                $route->execute();
+                return $route->execute();
             }
         }
 

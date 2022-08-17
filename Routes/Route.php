@@ -1,7 +1,7 @@
 <?php
 
 namespace Router;
-
+// la class route permet de parametrer les routes et indiquer les parametres de celle ci
 class Route {
 
     public $path;

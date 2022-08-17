@@ -1,0 +1,393 @@
+/* style pour header */
+
+header {
+    background-color:rgb(164, 173, 187);
+}
+
+.nav {
+    display: flex;
+    z-index: 99;
+}
+
+.nav a {
+    display: block;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #fff;
+    margin: 1px;
+    text-decoration: none;
+}
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    transition: all 0.6s ease;
+}
+
+#checkbox{
+    display: none;
+    background-color: #3c6594;
+}
+
+#label_checkbox{
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(rgb(0, 0, 0) 0%, rgb(0, 0, 0) 20%, transparent 21%, transparent 40%, rgb(0, 0, 0) 41%, rgb(0, 0, 0) 60%, transparent 61%, transparent 80%, rgb(0, 0, 0) 81%, rgb(0, 0, 0) 100%);
+    margin: 4px;
+    display: none;
+    border-radius: 4px;
+}
+
+@media all and (max-width:960px) {
+    .nav {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transform: translate(-1000px, 0);
+    }
+    nav a {
+        width: auto;
+    }
+    #checkbox:checked+nav{
+        transform: translate(0, 0);
+        transition: all 0.6s ease;
+    }
+    #label_checkbox {
+        display: block;
+    }
+}
+
+/* style pour index */
+
+.active {
+    background-color: bisque;
+}
+
+.intro {
+    background-image: url("/public/images/worker-is-cutting-wires-with-linemans-pliers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 300px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay_intro {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.intro h1 {
+    font-size: 4em;
+    text-align: center;
+    width: 100%;
+}
+
+.intro p {
+    font-size: 1.8em;
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.info {
+    background-color: rgb(164, 173, 187);
+
+}
+
+.info h2 {
+    margin-top: 0px;
+    padding-top: 50px;
+    font-size: 2.5em;
+}
+
+.info p {
+    font-size: 1.8em;
+    padding-bottom: 100px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.description {
+    background: url("/public/images/modern-villa-with-multiple-lights-and-sun-loungers-in-asprovalta-greece.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description h2 {
+    margin-top: 0.5em;
+    font-size: 2.5em;
+    text-align:left;
+    padding-top: 50px;
+}
+
+.description p {
+    font-size: 1.8em;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+}
+
+.overlay_description {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+/* style pour footer */
+
+.footer {
+    text-align: center;
+}
+
+.nav_media {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 0;
+    width: 320px;
+}
+
+.facebook, .linkedin, .instagram {
+    height: 40px;
+}
+
+/* style pour realization */
+
+.realization {
+    margin-top: 100px;
+    background-color: rgb(49, 54, 63);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.realization h2 {
+    font-size: 2em;
+}
+
+.realization h3 {
+    font-size: 1.8em;
+}
+
+.realization p {
+    font-size: 1.5em;
+}
+
+/* style pour carousel */
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* Cacher l'image */
+.mySlides {
+display: none;
+}
+
+/* Boutons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* bouton droite */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* fond noir quand la souris passe dessus */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* numero de photo */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* petit point */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/* style pour recrutement */
+
+.recrutement_title {
+    background-image: url("/public/images/worker-is-cutting-wires-with-linemans-pliers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 300px;
+    width: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.recrutement_title h1{
+    font-size: 4em;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+.how {
+    background-color: rgb(164, 173, 187);
+
+}
+
+.how h2 {
+    margin-top: 0px;
+    padding-top: 50px;
+    font-size: 2.5em;
+}
+
+.how p {
+    font-size: 1.8em;
+    padding-bottom: 100px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.emploi {
+    margin-top: 100px;
+    background-color: rgb(49, 54, 63);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.emploi h2 {
+    font-size: 2em;
+}
+
+.emploi h3 {
+    font-size: 1.8em;
+}
+
+.emploi p {
+    font-size: 1.5em;
+}
+
+/* style pour contact */
+
+.contact_title {
+    background-image: url("/public/images/worker-is-cutting-wires-with-linemans-pliers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 300px;
+    width: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_title h1{
+    font-size: 4em;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+.formulaire_contact {
+    margin: 20px;
+    border: solid 2px;
+    border-radius: 5px;
+    background-color: rgb(224, 224, 224);
+    font-size: 1em;
+}
+
+.formulaire_contact, input, textarea {
+    padding:3px;
+    border:1px solid #71a3ac;
+    border-radius:5px;
+    box-shadow:1px 1px 2px #3c6594 inset;
+}
