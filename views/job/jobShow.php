@@ -1,0 +1,1 @@
+<h1>Offre d'emploi n°<?= $params['id'] ?></h1>

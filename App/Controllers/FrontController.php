@@ -2,23 +2,36 @@
 
 namespace App\Controllers;
 
-use Database\DBConnection;
 //controle la partie Front
 class FrontController extends Controller {
 //public
-    public function index()
+    public function home()
     {
-        return $this->view('home.index');
+        return $this->view('home.home');
     }
 
     public function gallery()
     {
-        return $this->view('gallery.gallery');
+        $stmtGallery = $this->db->getPDO()->query('SELECT * FROM realization ORDER BY date DESC');
+        $realization = $stmtGallery->fetchAll();
+        return $this->view('gallery.gallery', compact('realization'));
+    }
+
+    public function galleryShow(int $id)
+    {
+        return $this->view('gallery.galleryShow', compact('id'));
     }
 
     public function job()
     {
-        return $this->view('job.job');
+        $stmtJobs = $this->db->getPDO()->query('SELECT * FROM jobs');
+        $jobs = $stmtJobs->fetchAll();
+        return $this->view('job.job', compact('jobs'));
+    }
+
+    public function jobShow(int $id)
+    {
+        return $this->view('job.jobShow', compact('id'));
     }
 
     public function contact()
@@ -28,8 +41,11 @@ class FrontController extends Controller {
 //admin
     public function login()
     {
-        $db = new DBConnection('wattohm', 'localhost', 'root', '');
-        //var_dump($db->getPDO());
         return $this->view('admin.login.login');
+    }
+
+    public function admin()
+    {
+        return $this->view('admin.admin.admin');
     }
 }
